@@ -2,7 +2,7 @@ import torch
 import torch.nn.functional as F
 from torch.nn.utils import clip_grad_norm_
 from tqdm import tqdm
-from core.model import GPTlite
+from RadioGPT.gptmodel.core.model import GPTlite
 
 
 def train(model, dataset, optimizer, epochs, batch_size, device,
@@ -102,6 +102,19 @@ def train(model, dataset, optimizer, epochs, batch_size, device,
             total_training_loss = 0.0
 
     torch.save(model.state_dict(), f"{save_dir}/last_model.pth")
+
+
+def generate_response(model, dataset, prompt, device, max_new_tokens=70):
+    # Encode the prompt
+    input_tensor = dataset.encode(prompt).unsqueeze(0).to(device)
+
+    # Generate text using the model's generate method
+    with torch.no_grad():
+        generated_indices = model.generate(input_tensor, max_new_tokens)
+        generated_text = dataset.decode(generated_indices[0].tolist())
+
+    # Return only the newly generated part (after the prompt)
+    return generated_text[len(prompt):]
 
 
 def evaluate(model, dataset, device, num_batches=10, batch_size=32):
