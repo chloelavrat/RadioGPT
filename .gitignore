@@ -4,3 +4,5 @@
 *.pyd
 *.pyw
 *.pyz
+dataset/*
+models/*
