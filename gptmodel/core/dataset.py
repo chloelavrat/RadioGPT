@@ -104,4 +104,4 @@ class AlpacaDataset(Dataset):
 
     def decode(self, tokens: List[int]) -> str:
         """Decode tokens to text, skipping special tokens"""
-        return self.tokenizer.decode(tokens)
+        return self.tokenizer.decode(tokens, skip_special_tokens=True)
