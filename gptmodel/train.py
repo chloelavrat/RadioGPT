@@ -1,7 +1,7 @@
 import os
 import torch
 from tqdm import tqdm
-from config import config
+from RadioGPT.gptmodel.config import config
 
 import torch.optim as optim
 from torch.optim.lr_scheduler import OneCycleLR
