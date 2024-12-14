@@ -1,0 +1,8 @@
+.venv/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+dataset/*
+models/*
