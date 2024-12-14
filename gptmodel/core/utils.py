@@ -1,6 +1,7 @@
 import torch
 import os
 import subprocess
+from RadioGPT.gptmodel.core.model import GPTlite
 
 
 def download_dataset(url, destination):
