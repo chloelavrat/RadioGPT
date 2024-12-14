@@ -30,20 +30,20 @@ The project consists of three main notebooks, each building upon the previous on
    - Character-level tokenization
    - Training a simple model on Molière's works
    - Understanding fundamental LLM components
-   - [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chloelavrat/RadioGPT/RadioGPT_1_Generateur_de_Moliere.ipynb)
+   - [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chloelavrat/RadioGPT/blob/main/RadioGPT_1_Generateur_de_Moliere.ipynb)
 
 2. **RadioGPT_2_Larger_LLM_Chat.ipynb**
    - Playing with a larger model (83.1M parameters)
    - Working with more sophisticated architectures
    - Improved text generation capabilities
    - Chat-oriented model training
-   - [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chloelavrat/RadioGPT/RadioGPT_2_Larger_LLM_Chat.ipynb)
+   - [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chloelavrat/RadioGPT/blob/main/RadioGPT_2_Larger_LLM_Chat.ipynb)
 3. **RadioGPT_3_Finally_RadioGPT.ipynb**
    - Fine-tuning on radio station data
    - Advanced model architecture
    - Real-world application with radio content
    - Multiple radio station dataset options
-   - [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chloelavrat/RadioGPT/RadioGPT_3_Finally_RadioGPT.ipynb)
+   - [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chloelavrat/RadioGPT/blob/main/RadioGPT_3_Finally_RadioGPT.ipynb)
 ## Core Components
 
 ### Model Architecture (`gptmodel/core/model.py`)
