@@ -56,8 +56,12 @@ The project consists of three main notebooks, each building upon the previous on
 - Multiple dataset classes:
   - `TinyShakespeare`: Character-level dataset
   - `AlpacaDataset`: Chat-oriented dataset
-  - `SQuADDataset`: Question-answering dataset
-  - `OpenWebTextDataset`: Large-scale text dataset
+
+### Dataset links
+- `TinyShakespeare` style:
+  - [petit molière](https://openfileserver.chloelavrat.com/workshops/RadioGPT/dataset/petitmoliere.txt)
+- `ALpaca` style:
+  - [Acquiesce_data_110k_instructions](https://openfileserver.chloelavrat.com/workshops/RadioGPT/dataset/Acquiesce_data_110k_instructions.json)
 
 ### Utilities (`gptmodel/core/utils.py`)
 - Training and evaluation functions
