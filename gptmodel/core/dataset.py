@@ -100,7 +100,7 @@ class AlpacaDataset(Dataset):
 
     def encode(self, text: str) -> torch.Tensor:
         """Encode text with truncation to block_size"""
-        return self.tokenizer.encode(text)
+        return torch.tensor(self.tokenizer.encode(text))
 
     def decode(self, tokens: List[int]) -> str:
         """Decode tokens to text, skipping special tokens"""

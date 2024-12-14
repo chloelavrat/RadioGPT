@@ -8,11 +8,10 @@ config = {
     },
     "Training": {
         "learning_rate": 1e-4,
-        "epochs": 50000,
-        "eval_every": 1000,
+        "epochs": 5,
+        "eval_every": 1,
         "batch_size": 16,
         "grad_clip": 0.5,
-        "warmup_iters": 1000,
         "patience": 10,
         "save_dir": "models",
         "train_split": 0.8,
